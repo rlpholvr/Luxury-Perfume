@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-image: url("Images/bg8.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+  
+  /* Navigation Bar */
+nav {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 90px;
+    border-bottom: 2px solid #FFD700;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.1);
+}
+  
+.image {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+  
+.logo {
+    width: 70px;
+    height: auto;
+}
+  
+.imp {
+    color: #FFD700;
+    
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+  
+.nav-list {
+    list-style: none;
+    display: flex;
+    
+}
+  
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+  
+nav h3 {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+}
+  
+.nav-list li a:hover {
+    color: #FFD700;
+}
+  
+  /* Mobile Menu */
+.menu-toggle {
+    display: none;
+}
+  
+.icon {
+    font-size: 30px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+  
+  /* Container & Headings */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+  
+h1 {
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 20px;
+    padding: 15px;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border: 2px solid #D4AF37; /* Gold border */
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #FFD700;
+}
+  
+  /* Perfume Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+  
+.card {
+    background: #3B3131;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #D4AF37; /* Gold color */
+}
+  
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+  
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+  
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffe082;
+}
+  
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    color: #ddd;
+}
+  
+.card span {
+    font-weight: bold;
+    color: #000000;
+    background-color: #fff8dc;
+    padding: 6px 14px;
+    border-radius: 12px;
+    border: 2px solid #FFD700
+}
+  
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: sticky;
+    border-top: 2px solid #FFD700;
+    box-shadow: 0 -2px 10px rgba(255, 215, 0, 0.2);
+  }
+  
+footer p {
+    font-size: 14px;
+}
+  
+  /* Responsive Tweaks */
+@media (max-width: 762px) {
+.icon {
+    display: block;
+}
+  
+.nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #111;
+    text-align: center;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    padding: 10px 0;
+}
+  
+.nav-list li {
+    margin: 10px 0;
+}
+  
+.menu-toggle:checked+.icon+.nav-list {
+    display: flex;
+}
+
+.imp {
+    font-size: 18px;
+}
+}
+  
+@media (min-width: 763px) {
+    footer {
+    font-size: 18px;
+    height: auto;
+    position: sticky;
+    padding: 15px 10px;
+}
+  
+footer p {
+    font-size: 18px;
+}
+  
+h1 {
+    margin-top: 130px;
+}
+}
